@@ -3,53 +3,80 @@ body {
 	margin: 0 auto;
 	font-family: Raleway, Helvetica;
 }
+
 @media only screen and (max-width: 1300px) {
+	
 	body {
 		width: 90%;
 	}
+
 }
+
 a{
 	text-decoration: none;
 }
+
 hr {
 	border-color: #fe0101;
 	border-width: 2px;
 	margin: 0 0 30px; 
 	border-style: solid;
 }
+
+
+/* Header */
 header{
 	display: grid;
 	grid-template-columns: auto auto;
 }
+
 header .logo {
 	height: 150px;
 }
+
 header .logo > img {
 	height: 100%;
 	display: block;
     margin: 0;
     margin-left: -35px;
 }
+
 header .name {
 	text-align: right;
 }
+
 header .name h1 {
 	font-size: 48px;
 	font-weight: 100;
 	text-transform: uppercase;
 	margin-bottom: 5px;
 }
+
+@media only screen and (max-width: 550px) {
+	
+	header .name h1 {
+		font-size: 31px;
+	}
+
+}
+
 header .name h3 {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	margin: 10px 0;
 }
+
+
+/* Banner */
 .banner {
 	background-image: url(../img/keyboard.jpg);
 	background-size: cover;
 	height: 500px;
 	width: 100%;
 }
+
+
+/* Portforlio */
 .work {
 	position: relative;
 	margin: 40px 0;
@@ -58,36 +85,48 @@ header .name h3 {
 	grid-row-gap: 25px;
 	grid-template-columns: auto auto auto;
 }
+
 @media only screen and (max-width: 767px) {
+	
 	.work {
 		grid-template-columns: auto auto;
 	}
+
 }
+
 @media only screen and (max-width: 550px) {
+	
 	.work {
 		grid-template-columns: auto;
 	}
+
 }
+
 .work article {
 	min-height: 300px;
 	overflow: hidden;
 }
+
 .work article a {
 	width: 100%;
 	display: block;
 	margin 20px;
 }
+
 .work article img {
 	width: 100%;
-	height: 300px;
+	height: auto;
 }
+
 .work article .title {
 	color: #444;
 	text-transform: uppercase;
 }
+
 .work article .title:hover {
 	color: #fe101;
 }
+
 .work article .desc {
 	color: #777;
 	margin: 5px 0;
